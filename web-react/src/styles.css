@@ -1,0 +1,22 @@
+/* basic styles adapted for React app */
+:root{ --bg:#071021; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --text:#e6eef8 }
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
+.app-root{max-width:900px;margin:32px auto;padding:20px;border-radius:12px}
+header h1{margin:0 0 8px}
+.todo-app .controls{display:flex;gap:12px;align-items:center}
+.entry input{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);width:60%}
+.entry button{padding:10px 12px;border-radius:8px;background:var(--accent);border:none;color:#002026}
+.search-filter{display:flex;gap:8px;align-items:center}
+.search-filter input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+.filters button{padding:6px 10px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,0.02);margin-left:6px}
+.list-section{margin-top:16px;display:flex;flex-direction:column;gap:8px}
+.todo-item{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;background:var(--card)}
+.check{width:36px;height:36px;border-radius:8px;background:transparent;display:grid;place-items:center;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+.check.completed{background:linear-gradient(90deg,#06b6d4,#0891b2);color:#00191e}
+.todo-text{flex:1}
+.todo-text.completed{text-decoration:line-through;color:var(--muted)}
+.todo-actions button{margin-left:8px;background:transparent;border:1px solid rgba(255,255,255,0.03);padding:6px;border-radius:6px}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+.empty{opacity:0.6}
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
